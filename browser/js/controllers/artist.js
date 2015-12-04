@@ -12,12 +12,12 @@ app.controller('ArtistCtrl', function ($scope, $rootScope, PlayerFactory, Artist
 		}
 	});
 
-	$scope.viewAlbum = function (albumId) {
-		$rootScope.$broadcast('changeView', {
-			name: 'oneAlbum',
-			id: albumId
-		});
-	};
+	// $scope.viewAlbum = function (albumId) {
+	// 	$rootScope.$broadcast('changeView', {
+	// 		name: 'oneAlbum',
+	// 		id: albumId
+	// 	});
+	// };
 
 	$scope.isCurrent = function (song) {
 		var current = PlayerFactory.getCurrentSong();
