@@ -24,7 +24,6 @@ app.controller('ArtistCtrl', function ($scope,/* $rootScope,*/ PlayerFactory, Ar
 			.then(function(artist) {
 					$scope.artist = artist;
 				}).then(null, console.error);
-
 	$scope.isCurrent = function (song) {
 		var current = PlayerFactory.getCurrentSong();
 		return current && current._id == song._id;

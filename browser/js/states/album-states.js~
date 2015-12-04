@@ -17,6 +17,6 @@ app.config(function ($stateProvider) {
 	}).state('artist', {
 		url: '/artist/{artistID}', //single album
 		templateUrl: '/singleArtist-template.html',
-   		controller: 'ArtistCtrl'
+   		controller: 'ArtistlCtrl'
 	})	
 });
